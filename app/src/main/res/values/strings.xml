@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clase 6</string>
+    <string name="hello_world">Hello Material Design!</string>
+    <string name="action_settings">Settings</string>
+    <string name="addItemHint">New Item</string>
+
+    <string name="transition_name">ListToDetails</string>
+</resources>

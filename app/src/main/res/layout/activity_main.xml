@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!--android:theme="@style/Theme.MyMaterialTheme"-->
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:hint="@string/addItemHint"
+            android:id="@+id/itemEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <ListView
+            android:id="@+id/itemListView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="@dimen/add_button_diameter"
+        android:layout_height="@dimen/add_button_diameter"
+        android:clickable="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:elevation="@dimen/elevation_low"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:stateListAnimator="@animator/button_elevation"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:pressedTranslationZ="12dp"
+        android:tint="@android:color/white"
+        android:id="@+id/add_item_button"
+        tools:ignore="RtlCompat"/>
+
+</FrameLayout>
